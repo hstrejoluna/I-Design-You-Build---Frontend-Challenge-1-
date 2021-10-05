@@ -8,7 +8,7 @@ const Navbar = () => {
         <p>About</p>
         <p>Gallery</p>
         <p>Contact</p>
-        <img className="sunicon" src={sun}></img>
+        <img className="sunicon" alt="toggle night mode" src={sun}></img>
       </div>
     </section>
   );
