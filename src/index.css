@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,7 +8,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-
 }
 
 .App {
@@ -103,6 +101,7 @@ code {
   width: 50px;
   justify-self: stretch;
   align-self: start;
+  z-index: 5;
 }
 .astronaut {
   position: absolute;
@@ -147,3 +146,107 @@ code {
   line-height: 27px;
 }
 
+.footer {
+  grid-area: footermain;
+  display: inline-grid;
+  grid-template-columns: 10% 20% 30% 10% 30%;
+  grid-template-rows: 100%;
+  grid-template-areas: " down imgfooter maindescfooter arrowfooter secondescfooter";
+  z-index: 10;
+  background-image: url('./images/Rectangle2.png');
+  background-repeat: cover;
+  /* Note: backdrop-filter has minimal browser sup
+  z-index: 10;
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.footer #mainarticleimg {
+  grid-area: imgfooter;
+  justify-self: stretch;
+  align-self: center;
+}
+
+.footer #mainarticleh3 {
+  grid-area: maindescfooter;
+  
+  width: 427px;
+  height: 36px;
+  left: 694px;
+  top: 698px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  z-index: 20;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.footer #mainarticlep {
+  grid-area: maindescfooter;
+  
+  width: 427px;
+  height: 93px;
+  left: 694px;
+  top: 752px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 50;
+}
+
+.footer #mainarticlearrow {
+  grid-area: arrowfooter;
+  position: absolute;
+  width: 55px;
+  height: 10px;
+  left: 1115px;
+  top: 832px;
+}
+
+.footer #secondarticleh3 {
+  grid-area: secondescfooter;
+
+  position: absolute;
+  width: 113px;
+  height: 36px;
+  left: 1325px;
+  top: 698px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.footer #secondarticlep {
+  grid-area: secondescfooter;
+  position: absolute;
+  width: 238px;
+  height: 62px;
+  left: 1321px;
+  top: 744px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 20;
+}
