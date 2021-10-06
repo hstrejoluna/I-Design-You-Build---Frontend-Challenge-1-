@@ -14,7 +14,7 @@ body {
   display: grid;
   background: linear-gradient(289.6deg, #0c0c0c 0%, #2c4550 98.22%);
   grid-template-columns: 10% 1fr 1fr 87px;
-  grid-template-rows: 87px auto 25%;
+  grid-template-rows: 10% 62% 28%;
   grid-template-areas:
     "verticalbar navbar navbar navbar"
     "verticalbar main main ."
@@ -40,7 +40,7 @@ code {
 .verticalbar h2 {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-top: 1rem;
 }
 .social-media {
@@ -123,22 +123,19 @@ code {
   grid-area: herotext;
   justify-self: end;
   align-self: end;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 
 .herotext h2 {
-  width: 392px;
-  height: 158px;
+  margin-left: 8rem;
   color: white;
   font-family: "Poppins", sans-serif;
   font-size: 72px;
   line-height: 79.2px;
 }
 .herotext p {
-  width: 524px;
-  height: 81px;
-  top: 403px;
-  left: 287px;
+  margin-top: -2rem;
+  margin-left: 8rem;
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -149,11 +146,11 @@ code {
 .footer {
   grid-area: footermain;
   display: inline-grid;
-  grid-template-columns: 10% 20% 30% 10% 30%;
+  grid-template-columns: 8.5% 23.5% 38% 10% 20%;
   grid-template-rows: 100%;
   grid-template-areas: " down imgfooter maindescfooter arrowfooter secondescfooter";
   z-index: 10;
-  background-image: url('./images/Rectangle2.png');
+  background-image: url("./images/Rectangle2.png");
   background-repeat: cover;
   /* Note: backdrop-filter has minimal browser sup
   z-index: 10;
@@ -162,22 +159,19 @@ code {
 
 .footer #mainarticleimg {
   grid-area: imgfooter;
-  justify-self: stretch;
-  align-self: center;
+  width: 100%;
+  height: 100%;
 }
 
 .footer #mainarticleh3 {
   grid-area: maindescfooter;
-  
-  width: 427px;
-  height: 36px;
-  left: 694px;
-  top: 698px;
-
   font-family: Poppins;
+  align-self: start;
+  margin-top: 10%;
+  margin-left: 15%;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5vw;
   line-height: 36px;
   z-index: 20;
 
@@ -188,16 +182,14 @@ code {
 
 .footer #mainarticlep {
   grid-area: maindescfooter;
-  
-  width: 427px;
-  height: 93px;
-  left: 694px;
-  top: 752px;
-
+  margin-top: 15%;
+  margin-left: 15%;
+  width: 65%;
+  align-self: center;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1vw;
   line-height: 31px;
 
   color: rgba(255, 255, 255, 0.9);
@@ -206,26 +198,21 @@ code {
 
 .footer #mainarticlearrow {
   grid-area: arrowfooter;
-  position: absolute;
-  width: 55px;
-  height: 10px;
-  left: 1115px;
-  top: 832px;
+  align-self: end;
+  justify-self: end;
+  margin-bottom: 40%;
+  margin-right: 100%;
 }
 
 .footer #secondarticleh3 {
   grid-area: secondescfooter;
-
-  position: absolute;
-  width: 113px;
-  height: 36px;
-  left: 1325px;
-  top: 698px;
-
   font-family: Poppins;
+  font-family: Poppins;
+  align-self: start;
+  margin-top: 20%;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5vw;
   line-height: 36px;
 
   /* identical to box height */
@@ -235,16 +222,14 @@ code {
 
 .footer #secondarticlep {
   grid-area: secondescfooter;
-  position: absolute;
-  width: 238px;
-  height: 62px;
-  left: 1321px;
-  top: 744px;
 
+  margin-top: 15%;
+  width: 65%;
+  align-self: center;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1vw;
   line-height: 31px;
 
   color: rgba(255, 255, 255, 0.9);
