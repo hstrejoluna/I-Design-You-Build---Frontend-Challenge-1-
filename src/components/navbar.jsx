@@ -1,4 +1,6 @@
 import sun from "../images/sun.png";
+import mobilemenu from "../images/menumobile.png";
+
 
 const Navbar = () => {
   return (
@@ -9,6 +11,8 @@ const Navbar = () => {
         <p>Gallery</p>
         <p>Contact</p>
         <img className="sunicon" alt="toggle night mode" src={sun}></img>
+        <img className="mobilemenu" alt="mobile-menu" src={mobilemenu}></img>
+
       </div>
     </section>
   );

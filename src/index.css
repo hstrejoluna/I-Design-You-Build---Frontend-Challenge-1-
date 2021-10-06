@@ -23,6 +23,7 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+/* 2778x1284 pixels at 458ppi */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -35,6 +36,7 @@ code {
   justify-content: space-between;
   grid-area: verticalbar;
   border-right: solid 1px #fff;
+  
 }
 
 .verticalbar h2 {
@@ -234,4 +236,44 @@ code {
 
   color: rgba(255, 255, 255, 0.9);
   z-index: 20;
+}
+
+.mobilemenu{
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .social-media {
+    display: none;
+  }
+  .nav-items p {
+    display: none;
+  }
+  .nav-items .sunicon{
+    display: none;
+  }
+  .nav-items .mobilemenu{
+    display: block;
+  }
+  .nav-items {
+    display: flex;
+    grid-area: mobilemenu;
+  }
+  .App {
+    grid-template-columns: 20px 1fr 2fr 1fr;
+    grid-template-rows: 10% 62% 28%;
+    grid-template-areas:
+      ". logo . navbar"
+      ". main main main"
+      "footermain footermain footermain footermain";
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .verticalbar{
+    grid-area: logo;
+    display: block;
+    border-right: 0px;
+  }
+  
 }
