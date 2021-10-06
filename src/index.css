@@ -99,8 +99,6 @@ code {
 
 .heroimage {
   grid-area: heroimg;
-  height: 50px;
-  width: 50px;
   justify-self: stretch;
   align-self: start;
   z-index: 5;
@@ -109,8 +107,8 @@ code {
   position: absolute;
   width: 323px;
   height: 242px;
-  left: 758px;
-  top: 157px;
+  left: 788px;
+  top: 127px;
   z-index: 50;
 }
 .cubes {
@@ -270,10 +268,24 @@ code {
     height: 100vh;
     overflow: hidden;
   }
+  .body{
+    overflow: hidden;
+  }
   .verticalbar{
     grid-area: logo;
     display: block;
     border-right: 0px;
+  }
+
+  
+  .cubes{
+    grid-area: main;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    left: 10px;
+    top: 200px;
+    z-index: -10;
   }
   
 }
