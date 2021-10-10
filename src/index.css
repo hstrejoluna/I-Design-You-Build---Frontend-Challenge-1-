@@ -72,6 +72,15 @@ code {
   align-items: center;
 }
 
+/* MOBILE IMAGES */
+
+.cubesmobile {
+  display: none;
+}
+.astronautmobile {
+  display: none;
+}
+
 .navbar p {
   color: white;
   padding-right: 2.5rem;
@@ -267,6 +276,12 @@ code {
     height: 100vh;
     overflow: hidden;
   }
+  .hero {
+    grid-area: main;
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "heroimg";
+  }
   .body {
     overflow: hidden;
   }
@@ -276,39 +291,46 @@ code {
     border-right: 0px;
   }
 
-  .heroimg {
-    overflow: hidden;
-  }
+  /* IMAGES MOBILE */
 
   .cubes {
+    display: none;
+  }
+
+  .cubesmobile {
+    display: block;
     grid-area: heroimg;
-    width: 600px;
-    height: 500px;
-    left: 10px;
-    top: 200px;
-    z-index: 1;
+    position: relative;
+    left: -15px;
+    bottom: 45px;
+    z-index: 5;
   }
 
   .astronaut {
     grid-area: heroimg;
-    width: 150px;
-    height: 100px;
-    left: 160px;
-    top: 300px;
-    z-index: 1;
+    width: 200px;
+    height: 140px;
+    left: 135px;
+    top: 190px;
+    z-index: 10;
+  }
+  .herotext {
+    grid-area: heroimg;
+    z-index: 20;
   }
 
   .herotext h2 {
-    margin-left: 16rem;
+    margin-left: 1rem;
     font-size: 48px;
     line-height: 36px;
     z-index: 10;
   }
 
-  .herotext p{
-    margin-left: 16rem;
+  .herotext p {
+    margin-left: 1rem;
     font-size: 12px;
     line-height: 15px;
+    width: 60%;
     z-index: 30;
   }
 }

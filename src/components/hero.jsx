@@ -1,5 +1,7 @@
 import astronaut from "../images/back2.png";
+
 import cubes from "../images/back1.png";
+import cubesmobile from "../images/cubesmobile.png";
 
 const Hero = () => {
   return (
@@ -15,6 +17,9 @@ const Hero = () => {
       <div className="heroimage">
         <img className="astronaut" src={astronaut} alt="astronaut" />
         <img className="cubes" src={cubes} alt="cubes" />
+        <img className="cubesmobile" src={cubesmobile} alt="cubes-mobile" />
+
+
       </div>
     </section>
   );
