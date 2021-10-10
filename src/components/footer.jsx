@@ -11,8 +11,7 @@ const Footer = () => {
         potenti faucibus nec, rhoncus, vulputate
       </p>
       <p id="mainarticlepmobile">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id
-        potenti faucibus nec, rhoncus, vulputate
+        Lorem ipsum dolor sit amet, consectetur adipiscing
       </p>
       <img id="mainarticlearrow" src={arrow}></img>
       <h3 id="secondarticleh3">Footprint</h3>

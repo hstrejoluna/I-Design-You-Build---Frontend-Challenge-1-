@@ -105,7 +105,6 @@ code {
   grid-template-areas: "herotext heroimg";
 }
 
-
 .heroimage {
   grid-area: heroimg;
   justify-self: stretch;
@@ -245,7 +244,7 @@ code {
   z-index: 20;
 }
 
-.footer #mainarticlemobile{
+.footer #mainarticlepmobile {
   display: none;
 }
 
@@ -322,12 +321,14 @@ code {
   .herotext {
     grid-area: heroimg;
     z-index: 20;
+    margin-bottom: 150px;
   }
 
   .herotext h2 {
     margin-left: 1rem;
     font-size: 48px;
     line-height: 36px;
+    margin-bottom: 70px;
     z-index: 10;
   }
 
@@ -354,19 +355,35 @@ code {
   .footer #mainarticleh3 {
     grid-area: footerdesc;
     font-size: 15px;
-    
   }
 
   .footer #mainarticlep {
+    display: none;
+  }
+  .footer #mainarticlepmobile {
+    display: block;
     grid-area: footerdesc;
-    line-height: 15px;
-    font-size: 10px;
+    line-height: 10px;
+    font-size: 14px;
+    width: 90px;
+    margin-top: 15%;
+    margin-left: 15%;
+    align-self: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .footer #mainarticlearrow {
     grid-area: footerdesc;
+    width: 30px;
+    height: 10px;
     align-self: end;
     justify-self: end;
-    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-right: 20%;
   }
 }
