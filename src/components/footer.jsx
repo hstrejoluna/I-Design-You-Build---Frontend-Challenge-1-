@@ -4,7 +4,7 @@ import arrow from "../images/arrowfooter.png";
 const Footer = () => {
   return (
     <section className="footer" id="footer">
-      <img id="mainarticleimg" src={footerimg}></img>
+      <img id="mainarticleimg" src={footerimg} alt="main article"></img>
       <h3 id="mainarticleh3">Exploration</h3>
       <p id="mainarticlep">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat id
@@ -13,7 +13,7 @@ const Footer = () => {
       <p id="mainarticlepmobile">
         Lorem ipsum dolor sit amet, consectetur adipiscing
       </p>
-      <img id="mainarticlearrow" src={arrow}></img>
+      <img id="mainarticlearrow" src={arrow} alt="article arrow"></img>
       <h3 id="secondarticleh3">Footprint</h3>
       <p id="secondarticlep">Lorem ipsum dolor sit amet, consectetur </p>
     </section>
